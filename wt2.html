@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0".>
+<title>COLLAB SPHERE</title>
+
+<style>
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+display:flex;
+justify-content:center;
+background:white;
+font-family:"Times New Roman", serif;
+}
+
+.container{
+width:520px;
+}
+
+.title{
+height:17px;
+text-align:center;
+color:blue;
+font-weight:bold;
+font-size:14px;
+line-height:17px;
+}
+
+.line{
+height:17px;
+width:100%;
+background:#d7d7d7;
+}
+
+.navigation{
+height:33px;
+text-align:center;
+font-size:9px;
+line-height:14px;
+}
+.navigation a{
+color:purple;
+text-decoratiom:underline;
+}
+
+.audio-area{
+height:33px;
+text-align:center;
+font-size:9px;
+line-height:33px;
+}
+
+.audio-area audio{
+width:120px;
+height:22px;
+vertical-align:middle;
+}
+.collabsphere{
+display:block;
+width:520px;
+heught:165px;
+objecy-fit:cover;
+}
+.media-grid{
+display:grid;
+grid-template-coloumns:260px; 260px;
+grid-template-rows:165px 165px; 
+gap:0;
+}
+
+.media-grid iframe,
+.media-grid video{
+display:block;
+width:260px;
+height:165px;
+border:0;
+object-fit:cover;
+background:black;
+}
+
+
+@media(max-width:520px){
+.container,
+.collabsphere{
+width:100%;
+}
+
+.media-grid{
+grid-template-coloumns:50% 50% ;
+}
+.media-grid iframe,
+.media-grid video{
+width:100%;
+}
+}
+</style>
+</head>
+
+<body>
+<div class ="container">
+<div class="title">COLLABSPHERE</div>
+
+
+<div class="audio-area">
+<audio controls>
+<source src="file:///C:/Users/m/Downloads/The_McKrells_-_Catch_Me_If_I_Fall_(mp3.pm).mp3.mp "
+ type="audio/mpeg">
+</audio>
+</div>
+
+<div class="line"></div>
+
+<img 
+class="collab-sphere"
+src="images.copy.jpeg" 
+alt="collab---sphere">
+
+<div class="media-grid">
+<iframe 
+src="CollabSphere_Project_Overview.pdf">
+
+
+</iframe>
+<iframe width="560" height="315" 
+src=" https://www.youtube.com/embed/qot9HgGx2sM?si=1npZBTdxRfa874US"
+ title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+ gyroscope; picture-in-picture; web-share"
+ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>  
+
+<video controls>
+<source src="collabsphere.mp4"
+type="video/mp4">
+</video>
+<iframe 
+src=" https://www.google.com/maps?q=Karunya%20Institute
+%20of%20Technology%20and%20Sciences%2C%20Coimbatore&output=embed"
+   
+title="map"
+loading="lazy">
+</iframe>
+</div>
+</div>
+</body>
+</html>
